@@ -43,7 +43,7 @@ function App() {
   }, [fetchImages]);
 
   const handleSearched = () => {
-    setPage(1); // Reset to the first page on a new search
+    setPage(1); 
     fetchImages();
   };
 

@@ -1,13 +1,16 @@
 {
+  "homepage": "https://Aakaash0.github.io/Unsplash_APi_search_images",
   "name": "unsplashapi",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+ "scripts": {
+  "dev": "vite",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.7.7",
